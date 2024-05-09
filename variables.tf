@@ -1,9 +1,8 @@
-variable "network_name" {
+variable "vpc_name" {
     type = string
     description = "Nombre de la red"
     sensitive = true
 }
-
 
 variable "instance_name" {
   type = string
@@ -16,3 +15,10 @@ variable "instance_type" {
   description = "value"
   default = "t2.nano"
 }
+
+variable "subnet_name" {
+  type = string
+  description = "Nombre de la Subnet"
+  default = "nombre predeterminado"
+}
+
